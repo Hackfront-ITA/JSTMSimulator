@@ -68,6 +68,7 @@ var minifiedCSS2 = jsCopyrightComment + minifiedCSS;
 
 var indexHTMLOutput = [
 	'<!DOCTYPE html>',
+	'<!-- saved from url=(0014)about:internet -->',
 	'<!--',
 	licenseText,
 	'-->',
@@ -89,6 +90,7 @@ var indexHTMLOutput = [
 
 var allInOneHTMLOutput = [
 	'<!DOCTYPE html>',
+	'<!-- saved from url=(0014)about:internet -->',
 	'<!--',
 	licenseText,
 	'-->',

@@ -36,6 +36,7 @@ var xmlhttpfuncJS = fs.readFileSync(path.join(__dirname, 'lib', 'xmlhttpfunc.js'
 var xmlhttpContestJS = fs.readFileSync(path.join(__dirname, 'lib', 'xmlhttpContest.js'));
 var finalHTML = [
 	'<!DOCTYPE html>',
+	'<!-- saved from url=(0014)about:internet -->',
 	'<!--',
 	licenseText,
 	'-->',
