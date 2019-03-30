@@ -4,3 +4,10 @@ old
 server/config.js
 server/database.sqlite
 server/results
+/out/cache.manifest
+/out/cache.minfiles.manifest
+/out/index.htm
+/out/jstmsimulator.htm
+/out/jstmsimulator.min.css
+/out/jstmsimulator.min.js
+/out/jstmsimulator.min.js.map
