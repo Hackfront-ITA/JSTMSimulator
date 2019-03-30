@@ -66,9 +66,51 @@ jsSourceMap = jsSourceMap.toString();
 var minifiedCSS = uglifycss(cssStyle);
 var minifiedCSS2 = jsCopyrightComment + minifiedCSS;
 
-var indexHTMLOutput = '<!doctype html>\n<!-- saved from url=(0014)about:internet -->\n<!--\n' + licenseText + '--><html manifest="cache.minfiles.manifest" class="notranslate"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Turing Machine Simulator by VittGam</title>' + htmlheadHtml + '<link rel="stylesheet" type="text/css" href="jstmsimulator.min.css">' + iecsshacksHtml + '</head><body>' + turingMachineHtml + '<script src="jstmsimulator.min.js"></script></body></html>';
+var indexHTMLOutput = [
+	'<!DOCTYPE html>',
+	'<!--',
+	licenseText,
+	'-->',
+	'<html manifest="cache.minfiles.manifest" class="notranslate">',
+	'<head>',
+	'  <meta charset="utf-8">',
+	'  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">',
+	'  <title>Turing Machine Simulator</title>',
+	htmlheadHtml,
+	'  <link rel="stylesheet" type="text/css" href="jstmsimulator.min.css">',
+	iecsshacksHtml,
+	'</head>',
+	'<body>',
+	turingMachineHtml,
+	'  <script src="jstmsimulator.min.js"></script>',
+	'</body>',
+	'</html>'
+].join('\n');
 
-var allInOneHTMLOutput = '<!doctype html>\n<!-- saved from url=(0014)about:internet -->\n<!--\n' + licenseText + '--><html manifest="cache.manifest" class="notranslate"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>Turing Machine Simulator by VittGam</title>' + htmlheadHtml + '<style>' + minifiedCSS + '</style>' + iecsshacksHtml + '</head><body>' + turingMachineHtml + '<script>' + minifiedJS + '</script></body></html>';
+var allInOneHTMLOutput = [
+	'<!DOCTYPE html>',
+	'<!--',
+	licenseText,
+	'-->',
+	'<html manifest="cache.manifest" class="notranslate">',
+	'<head>',
+	'  <meta charset="utf-8">',
+	'  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">',
+	'  <title>Turing Machine Simulator</title>',
+	htmlheadHtml,
+	'  <style>',
+	minifiedCSS,
+	'  </style>',
+	iecsshacksHtml,
+	'</head>',
+	'<body>',
+	turingMachineHtml,
+	'  <script>',
+	minifiedJS,
+	'  </script>',
+	'</body>',
+	'</html>'
+].join('\n');
 
 var currhash = crypto.createHash('md5');
 currhash.update(allInOneHTMLOutput, 'utf8');
@@ -83,7 +125,26 @@ fs.writeFileSync(path.join(__dirname, 'out', 'index.htm'), indexHTMLOutput.repla
 fs.writeFileSync(path.join(__dirname, 'out', 'jstmsimulator.min.css'), minifiedCSS2.replace(new RegExp('(?:\\r\\n|\\n|\\r)', 'g'), '\r\n'));
 fs.writeFileSync(path.join(__dirname, 'out', 'jstmsimulator.min.js'), minifiedJS2.replace(new RegExp('(?:\\r\\n|\\n|\\r)', 'g'), '\r\n'));
 fs.writeFileSync(path.join(__dirname, 'out', 'jstmsimulator.min.js.map'), jsSourceMap);
-fs.writeFileSync(path.join(__dirname, 'out', 'cache.minfiles.manifest'), 'CACHE MANIFEST\n# Build hash: '+buildHash+'\nNETWORK:\n*\nCACHE:\njstmsimulator.min.css\njstmsimulator.min.js\njstmsimulator.min.js.map\njstmsimulator.gif\n');
+fs.writeFileSync(path.join(__dirname, 'out', 'cache.minfiles.manifest'), [
+	'CACHE MANIFEST',
+	'# Build hash:',
+	buildHash,
+	'NETWORK:',
+	'*',
+	'CACHE:',
+	'jstmsimulator.min.css',
+	'jstmsimulator.min.js',
+	'jstmsimulator.min.js.map',
+	'jstmsimulator.gif'
+].join('\n'));
 
 fs.writeFileSync(path.join(__dirname, 'out', 'jstmsimulator.htm'), allInOneHTMLOutput.replace(new RegExp('(?:\\r\\n|\\n|\\r)', 'g'), '\r\n'));
-fs.writeFileSync(path.join(__dirname, 'out', 'cache.manifest'), 'CACHE MANIFEST\n# Build hash: '+buildHash+'\nNETWORK:\n*\nCACHE:\njstmsimulator.gif\n');
+fs.writeFileSync(path.join(__dirname, 'out', 'cache.manifest'), [
+	'CACHE MANIFEST',
+	'# Build hash: ',
+	buildHash,
+	'NETWORK:',
+	'*',
+	'CACHE:',
+	'jstmsimulator.gif'
+].join('\n'));
