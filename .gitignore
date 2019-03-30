@@ -1,9 +1,6 @@
-node-v0.8.20
-node_modules
-old
-server/config.js
-server/database.sqlite
-server/results
+node-v0.8.20/
+node_modules/
+old/
 /out/cache.manifest
 /out/cache.minfiles.manifest
 /out/index.htm
@@ -11,3 +8,6 @@ server/results
 /out/jstmsimulator.min.css
 /out/jstmsimulator.min.js
 /out/jstmsimulator.min.js.map
+/server/config.js
+/server/database.sqlite
+/server/results/
