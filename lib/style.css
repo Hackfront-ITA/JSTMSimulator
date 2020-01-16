@@ -12,21 +12,26 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	font: 15px arial,sans-serif;
 	background: #008b54;
 }
+
 body.displayresults {
 	margin: 8px;
 	background: white;
 }
+
 h1 {
 	margin-top: 0;
 }
+
 #main, #tape #tapebg {
 	background-image: url(jstmsimulator.gif);
 	background-repeat: no-repeat;
 }
+
 #main {
 	position: relative;
 	background-color: #008b54;
@@ -45,10 +50,12 @@ h1 {
 	-ms-user-select: none;
 	user-select: none;
 }
+
 body.displayresults #main {
 	border: 10px solid #008b54;
 	border-radius: 10px;
 }
+
 #state {
 	position: absolute;
 	left: 0;
@@ -62,6 +69,7 @@ body.displayresults #main {
 	white-space: pre;
 	z-index: 1;
 }
+
 #code {
 	position: absolute;
 	z-index: 4;
@@ -78,6 +86,7 @@ body.displayresults #main {
 	padding: 2px;
 	border: 0;
 }
+
 #username {
 	position: absolute;
 	z-index: 4;
@@ -94,9 +103,11 @@ body.displayresults #main {
 	text-shadow: black 0 0 6px;
 	display: none;
 }
+
 body.loadmode.savemode #username {
 	display: block;
 }
+
 #status {
 	position: absolute;
 	z-index: 3;
@@ -112,13 +123,16 @@ body.loadmode.savemode #username {
 	font-weight: bold;
 	text-shadow: black 0 0 6px;
 }
+
 #status a {
 	color: white;
 	text-decoration: none;
 }
+
 #status a:hover, #status a:focus {
 	text-decoration: underline;
 }
+
 #progs {
 	display: none;
 	position: absolute;
@@ -129,6 +143,7 @@ body.loadmode.savemode #username {
 	height: 24px;
 	cursor: default;
 }
+
 #loadbtn {
 	display: none;
 	position: absolute;
@@ -138,6 +153,7 @@ body.loadmode.savemode #username {
 	width: 230px;
 	height: 24px;
 }
+
 #savebtn {
 	display: none;
 	position: absolute;
@@ -147,21 +163,26 @@ body.loadmode.savemode #username {
 	width: 115px;
 	height: 24px;
 }
+
 body.loadmode #code {
 	height: 520px;
 }
+
 body.loadmode.savemode #code {
 	top: 18px;
 	height: 502px;
 }
+
 body.loadmode #progs,
 body.loadmode #loadbtn,
 body.loadmode.savemode #savebtn {
 	display: block;
 }
+
 body.loadmode.savemode #loadbtn {
 	width: 115px;
 }
+
 #startbtn {
 	position: absolute;
 	z-index: 4;
@@ -170,6 +191,7 @@ body.loadmode.savemode #loadbtn {
 	width: 240px;
 	height: 24px;
 }
+
 #stopbtn {
 	position: absolute;
 	z-index: 4;
@@ -178,6 +200,7 @@ body.loadmode.savemode #loadbtn {
 	width: 240px;
 	height: 24px;
 }
+
 #speedlbl {
 	position: absolute;
 	z-index: 4;
@@ -188,6 +211,7 @@ body.loadmode.savemode #loadbtn {
 	color: white;
 	font: 18px arial,sans-serif;
 }
+
 #speed {
 	position: absolute;
 	z-index: 4;
@@ -197,6 +221,7 @@ body.loadmode.savemode #loadbtn {
 	height: 24px;
 	cursor: default;
 }
+
 #input {
 	position: absolute;
 	z-index: 4;
@@ -205,6 +230,7 @@ body.loadmode.savemode #loadbtn {
 	width: 716px;
 	height: 16px;
 }
+
 #tape {
 	position: absolute;
 	z-index: 2;
@@ -214,6 +240,7 @@ body.loadmode.savemode #loadbtn {
 	height: 209px;
 	overflow: hidden;
 }
+
 #tape #tapebg {
 	background-position: 0px 0px;
 	position: absolute;
@@ -223,12 +250,15 @@ body.loadmode.savemode #loadbtn {
 	width: 720px;
 	height: 627px;
 }
+
 #tape.anim1 #tapebg {
 	top: -418px;
 }
+
 #tape.anim2 #tapebg {
 	top: -209px;
 }
+
 #tape span {
 	position: absolute;
 	font-weight: bold;
@@ -236,14 +266,17 @@ body.loadmode.savemode #loadbtn {
 	height: 16px;
 	z-index: 2;
 }
+
 #tape.anim1 span {
 	margin-left: 1px;
 }
+
 #tape.anim2 span {
 	margin-left: -6px;
 	margin-top: -1px;
 }
 #tape.movedleft span#cell16,
+
 #tape.movedright span#cell14 {
 	color: green;
 }
@@ -278,6 +311,7 @@ body.loadmode.savemode #loadbtn {
 #tape span#cell28{left:546px;top:26px}
 #tape span#cell29{left:560px;top:27px}
 #tape span#cell30{left:576px;top:28px}
+
 #moveleft {
 	position: absolute;
 	left: 78px;
@@ -286,6 +320,7 @@ body.loadmode.savemode #loadbtn {
 	height: 64px;
 	z-index: 4;
 }
+
 #moveright {
 	position: absolute;
 	left: 587px;
@@ -294,29 +329,37 @@ body.loadmode.savemode #loadbtn {
 	height: 64px;
 	z-index: 4;
 }
+
 body.displayresults #results th {
 	text-align: left;
 }
+
 body.displayresults #results th.prob {
 	text-align: right;
 	font-size: smaller;
 }
+
 body.displayresults #results td.prob {
 	text-align: right;
 }
+
 body.displayresults #results .green {
 	background-color: #90ee90;
 }
+
 body.displayresults #results .yellow {
 	background-color: #eeee90;
 }
+
 body.displayresults #results .red {
 	background-color: #ee9090;
 }
+
 body.displayresults #results td.codecell {
 	font-family: "monospace",monospace;
 	white-space: pre;
 }
+
 #noscript-alert {
 	color: red;
 	font-size: 40px;
