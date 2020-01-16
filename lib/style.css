@@ -209,7 +209,7 @@ body.loadmode.savemode #loadbtn {
 	width: 70px;
 	height: 18px;
 	color: white;
-	font: 18px arial,sans-serif;
+	font: 18px arial, sans-serif;
 }
 
 #speed {
@@ -275,42 +275,43 @@ body.loadmode.savemode #loadbtn {
 	margin-left: -6px;
 	margin-top: -1px;
 }
-#tape.movedleft span#cell16,
 
+#tape.movedleft  span#cell16,
 #tape.movedright span#cell14 {
 	color: green;
 }
-#tape span#cell0{left:156px;top:35px}
-#tape span#cell1{left:167px;top:36px}
-#tape span#cell2{left:181px;top:35px}
-#tape span#cell3{left:194px;top:35px}
-#tape span#cell4{left:208px;top:35px}
-#tape span#cell5{left:220px;top:35px}
-#tape span#cell6{left:232px;top:34px}
-#tape span#cell7{left:245px;top:34px}
-#tape span#cell8{left:259px;top:34px}
-#tape span#cell9{left:273px;top:34px}
-#tape span#cell10{left:288px;top:33px}
-#tape span#cell11{left:303px;top:32px}
-#tape span#cell12{left:318px;top:32px}
-#tape span#cell13{left:333px;top:32px}
-#tape span#cell14{left:347px;top:31px}
-#tape span#cell15{left:362px;top:31px;color:red}
-#tape span#cell16{left:376px;top:30px}
-#tape span#cell17{left:390px;top:30px}
-#tape span#cell18{left:404px;top:29px}
-#tape span#cell19{left:418px;top:29px}
-#tape span#cell20{left:433px;top:29px}
-#tape span#cell21{left:449px;top:29px}
-#tape span#cell22{left:465px;top:29px}
-#tape span#cell23{left:479px;top:28px}
-#tape span#cell24{left:493px;top:28px}
-#tape span#cell25{left:507px;top:28px}
-#tape span#cell26{left:519px;top:27px}
-#tape span#cell27{left:532px;top:27px}
-#tape span#cell28{left:546px;top:26px}
-#tape span#cell29{left:560px;top:27px}
-#tape span#cell30{left:576px;top:28px}
+
+#tape span#cell0  { left: 156px; top: 35px }
+#tape span#cell1  { left: 167px; top: 36px }
+#tape span#cell2  { left: 181px; top: 35px }
+#tape span#cell3  { left: 194px; top: 35px }
+#tape span#cell4  { left: 208px; top: 35px }
+#tape span#cell5  { left: 220px; top: 35px }
+#tape span#cell6  { left: 232px; top: 34px }
+#tape span#cell7  { left: 245px; top: 34px }
+#tape span#cell8  { left: 259px; top: 34px }
+#tape span#cell9  { left: 273px; top: 34px }
+#tape span#cell10 { left: 288px; top: 33px }
+#tape span#cell11 { left: 303px; top: 32px }
+#tape span#cell12 { left: 318px; top: 32px }
+#tape span#cell13 { left: 333px; top: 32px }
+#tape span#cell14 { left: 347px; top: 31px }
+#tape span#cell15 { left: 362px; top: 31px; color:red }
+#tape span#cell16 { left: 376px; top: 30px }
+#tape span#cell17 { left: 390px; top: 30px }
+#tape span#cell18 { left: 404px; top: 29px }
+#tape span#cell19 { left: 418px; top: 29px }
+#tape span#cell20 { left: 433px; top: 29px }
+#tape span#cell21 { left: 449px; top: 29px }
+#tape span#cell22 { left: 465px; top: 29px }
+#tape span#cell23 { left: 479px; top: 28px }
+#tape span#cell24 { left: 493px; top: 28px }
+#tape span#cell25 { left: 507px; top: 28px }
+#tape span#cell26 { left: 519px; top: 27px }
+#tape span#cell27 { left: 532px; top: 27px }
+#tape span#cell28 { left: 546px; top: 26px }
+#tape span#cell29 { left: 560px; top: 27px }
+#tape span#cell30 { left: 576px; top: 28px }
 
 #moveleft {
 	position: absolute;
@@ -356,7 +357,7 @@ body.displayresults #results .red {
 }
 
 body.displayresults #results td.codecell {
-	font-family: "monospace",monospace;
+	font-family: "monospace", monospace;
 	white-space: pre;
 }
 
