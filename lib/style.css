@@ -15,7 +15,7 @@ html, body {
 
 body {
 	font: 15px arial,sans-serif;
-	background: #008b54;
+	background-color: #004f88;
 }
 
 body.displayresults {
@@ -34,7 +34,6 @@ h1 {
 
 #main {
 	position: relative;
-	background-color: #008b54;
 	background-position: -720px 0px;
 	width: 1024px;
 	height: 574px;
@@ -52,7 +51,7 @@ h1 {
 }
 
 body.displayresults #main {
-	border: 10px solid #008b54;
+	border: 10px solid #004f88;
 	border-radius: 10px;
 }
 
